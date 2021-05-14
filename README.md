@@ -1,5 +1,4 @@
-# tkinter-entry
-Tkinterのentryに関するコード
+# tkinter-entry-validation
+Tkinterのentryに関するvalidationコード
 
 # 参考記事
-https://kuroro.blog/python/PUZp77YFxrXvMCjpZbUg/
