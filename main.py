@@ -59,6 +59,7 @@ class Application(tk.Frame):
         super().__init__(master)
 
         # Windowの画面サイズを設定する。
+        # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200")
 
         ############################################## frame Widget START ##############################################
@@ -78,6 +79,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、入力検証のために、利用できるデータ内容を書き込むtext Widgetを作成する。
         # height : 高さの設定
         # width : 幅の設定
+        # Textについて : https://kuroro.blog/python/bK6fWsP9LMqmER1CBz9E/
         self.text = tk.Text(frame, height=10, width=40)
 
         # frame Widget(Frame)を親要素とした場合に、text Widgetをどのように配置するのか?
@@ -115,6 +117,7 @@ class Application(tk.Frame):
         # focusout : entry Widgetへカーソルが外れた場合に入力検証する。
         # key : entry Widgetへ文字の追加、削除が行われた場合に入力検証する。
         # all : focus, focusin, focusout, key全て。
+        # Entryについて : https://kuroro.blog/python/PUZp77YFxrXvMCjpZbUg/
         ############################################################################################################
         self.entry = tk.Entry(frame, width=15, validate="key", validatecommand=vCmd, invalidcommand=self.invalidText)
 
@@ -129,4 +132,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = Application(master=root)
     # Windowをループさせて、継続的にWindow表示させる。
+    # mainloopについて : https://kuroro.blog/python/DmJdUb50oAhmBteRa4fi/
     app.mainloop()
