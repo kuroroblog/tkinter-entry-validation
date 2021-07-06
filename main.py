@@ -29,7 +29,7 @@ class Application(tk.Frame):
         self.master.geometry("300x200")
 
         # Windowを親要素として、frame Widget(Frame)を作成する。
-        # frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
+        # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         frame = tk.Frame(self.master)
 
         # Windowを親要素とした場合に、frame Widget(Frame)をどのように配置するのか?
@@ -45,6 +45,7 @@ class Application(tk.Frame):
         # validate : 入力制限するオプションの値を設定。
         # validatecommand or vcmd : 入力制限用関数の設定。(3. entryのvalidatecommand option or vcmd optionへ、2の戻り値とパラメータを渡す)
         # invalidcommand : 入力制限により、入力不正が発生した場合に呼ばれる関数の設定。
+        # Entryについて : https://kuroro.blog/python/PUZp77YFxrXvMCjpZbUg/
         self.entry = tk.Entry(frame, width=15, validate="key", validatecommand=(vcmd, '%P'), invalidcommand=self.invalidText)
 
         # frame Widget(Frame)を親要素とした場合に、entry Widgetをどのように配置するのか?
